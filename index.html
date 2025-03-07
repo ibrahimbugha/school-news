@@ -8,6 +8,7 @@
         تصميم ابراهيم البغا
     </title>
     <link rel="stylesheet" href="school.css">
+    <script src="school.js"></script>
 </head>
 <body>
     <header>أخبار الصف السابع
@@ -27,10 +28,10 @@
         </div>
         <div class="suggestions-box" id="suggestions-box">
             <h3>💡 اقتراحات</h3>
-            <form class="suggestion-form" onsubmit="event.preventDefault();">
+            <form class="suggestion-form" onsubmit="submitEntry(event)">
                 <input type="text" id="name" placeholder="اسمك" required>
-                <textarea id="suggestion" placeholder="(لم يتم تفعيله بعد) اكتب اقتراحك هنا..." required></textarea>
-                <button type="submit">إرسال</button>
+                <textarea id="content" placeholder="(لم يتم تفعيله بعد) اكتب اقتراحك هنا..." required></textarea>
+                <input type="submit" id="#form-submit" />
             </form>
         </div>
     </div>

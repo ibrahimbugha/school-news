@@ -1,12 +1,12 @@
 p {
-  height: 200px;
+  height: 300px;
   width: 500px;
   margin: 100px auto;
   position: relative;
 }
 
 img {
-  height: 100px;
+  height: 300px;
   position: absolute;
   left: 0;
   offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');

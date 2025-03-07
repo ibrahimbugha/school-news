@@ -46,7 +46,7 @@ header {
     border-radius: 5px;
     font-size: 16px;
 }
-.suggestion-form button, .show-button {
+.suggestion-form #form-submit, .show-button {
     background-color: #28a745;
     color: white;
     padding: 12px 20px;
@@ -56,6 +56,6 @@ header {
     border-radius: 5px;
     transition: 0.3s;
 }
-.suggestion-form button:hover, .show-button:hover {
+.suggestion-form #form-submit:hover, .show-button:hover {
     background-color: #218838;
 }
