@@ -32,7 +32,9 @@
                 <input type="text" id="name" placeholder="اسمك" required>
                 <textarea id="content" placeholder="() اكتب اقتراحك هنا..." required></textarea>
                 <input type="submit" id="#form-submit" />
+                
             </form>
+            <p class="success-message" id="success-message" style="display: none;">تم إرسال الاقتراح ✅</p>
         </div>
     </div>
     <script>
@@ -40,7 +42,22 @@
             const box = document.getElementById("suggestions-box");
             box.style.display = (box.style.display === "none" || box.style.display === "") ? "block" : "none";
         }
-
+        function submitEntry(event) {
+            event.preventDefault(); // منع إعادة تحميل الصفحة
+            
+            // تفريغ الحقول بعد الإرسال
+            document.getElementById("name").value = "";
+            document.getElementById("content").value = "";
+            
+            // إظهار رسالة النجاح
+            const successMessage = document.getElementById("success-message");
+            successMessage.style.display = "block";
+            
+            // إخفاء الرسالة بعد 3 ثوانٍ
+            setTimeout(() => {
+                successMessage.style.display = "none";
+            }, 3000);
+        }
     </script>
 
 
