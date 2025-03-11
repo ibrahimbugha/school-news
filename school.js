@@ -9,6 +9,17 @@ function submitEntry(event) {
         alert("Please enter some text.");
         return;
     }
+    document.getElementById("name").value = "";
+    document.getElementById("content").value = "";
+    
+    // إظهار رسالة النجاح
+    const successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block";
+    
+    // إخفاء الرسالة بعد 3 ثوانٍ
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 3000);
 
     // URL of your deployed Google Apps Script Web App (replace with your actual URL)
     var url = 'https://script.google.com/macros/s/AKfycbyYEjs1T-bflLAbxeb7czcll3013xDKwbqM3yHGkNUPIlB4h7COqSPX1YXsWuv6ObQl0A/exec';

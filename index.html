@@ -42,22 +42,22 @@
             const box = document.getElementById("suggestions-box");
             box.style.display = (box.style.display === "none" || box.style.display === "") ? "block" : "none";
         }
-        function submitEntry(event) {
-            event.preventDefault(); // منع إعادة تحميل الصفحة
+        // function submitEntry(event) {
+        //     event.preventDefault(); // منع إعادة تحميل الصفحة
             
-            // تفريغ الحقول بعد الإرسال
-            document.getElementById("name").value = "";
-            document.getElementById("content").value = "";
+        //     // تفريغ الحقول بعد الإرسال
+        // //     document.getElementById("name").value = "";
+        // //     document.getElementById("content").value = "";
             
-            // إظهار رسالة النجاح
-            const successMessage = document.getElementById("success-message");
-            successMessage.style.display = "block";
+        // //     // إظهار رسالة النجاح
+        // //     const successMessage = document.getElementById("success-message");
+        // //     successMessage.style.display = "block";
             
-            // إخفاء الرسالة بعد 3 ثوانٍ
-            setTimeout(() => {
-                successMessage.style.display = "none";
-            }, 3000);
-        }
+        // //     // إخفاء الرسالة بعد 3 ثوانٍ
+        // //     setTimeout(() => {
+        // //         successMessage.style.display = "none";
+        // //     }, 3000);
+        // }
     </script>
 
 
